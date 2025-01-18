@@ -62,13 +62,13 @@ export default function IncentivesSection() {
               <button className="btn btn-secondary-custom d-flex align-items-center gap-2">
                 <FaPhone style={{ transform: 'rotate(0deg)' }} /> 
                 <span style={{ display: 'inline-block', lineHeight: '1.2' }}>
-                  Call Us<br />Now
+                  Call Us Now
                 </span>
               </button>
             </div>
           </div>
         </div>
-      </div>
+      </div> 
     </section>
   )
 }

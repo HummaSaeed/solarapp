@@ -36,7 +36,7 @@ function SectionDescription() {
 
 function ServiceCards() {
   return (
-    <div className="row g-4">
+    <div className="row g-4" style={{marginLeft:30, marginRight:30}}>
       {SERVICES.map((service, index) => (
         <div key={service.title} className="col-lg-4">
           <ServiceCard {...service} imageFirst={index !== 1} />

@@ -20,6 +20,7 @@ export default function Home() {
       <SolutionsSection />
       <ReviewsSection />
       <ProjectsSection />
+      <div className="yellow-divider"></div>
       <IncentivesSection />
       <BlogsSection />
       <Footer />

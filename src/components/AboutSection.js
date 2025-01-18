@@ -74,17 +74,12 @@ function InfoSection() {
                 <Image
                     src={require("../assets/info-image.png")}
                     alt="Info Section"
-                    width={300}
-                    height={200}
+                    // width={300}
+                    // height={200}
                 />
             </div>
             <div className="info-content">
-                <p style={{
-                    marginRight: 100,
-                    fontSize: 18,
-                    display: "flex",
-                    alignSelf: "center"
-                }}>
+                <p className="info-text">
                     We continue to strive and adapt to promote positive sustainable solutions to meet energy demands.
                 </p>
                 <button className="btn btn-primary-custom">

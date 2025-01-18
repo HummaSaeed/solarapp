@@ -41,7 +41,7 @@ export default function SolutionsSection() {
 
   return (
     <section className="solutions-section">
-      <div className="container">
+      <div className="container" style={{marginLeft:-20}}>
         {SOLUTIONS.map((solution, index) => (
           <div key={solution.number}>
             <SolutionItem
@@ -61,7 +61,7 @@ export default function SolutionsSection() {
 function SolutionItem({ number, title, description, isExpanded, onToggle }) {
   return (
     <div className="row solution-item">
-      <div className="col-1 d-flex justify-content-start align-items-start">
+      <div className="col-1 d-flex justify-content-end align-items-start">
         <span className="number">{number}</span>
       </div>
       <div className="col-3 d-flex justify-content-start">
@@ -72,10 +72,11 @@ function SolutionItem({ number, title, description, isExpanded, onToggle }) {
       </div>
       <div className="col-4 d-flex flex-items-end justify-content-end">
         <button
+        
           className={`circle-arrow ${isExpanded ? 'expanded' : ''}`}
           onClick={onToggle}
         >
-          <FaChevronDown />
+          <FaChevronDown color="#20202099"/>
         </button>
       </div>
     </div>
@@ -83,45 +84,53 @@ function SolutionItem({ number, title, description, isExpanded, onToggle }) {
 }
 
 function ExpandedContent() {
-    return (
-        <div className="expanded-content">
-            <div className="row">
-                <div className="col-lg-8">
-                    <div className="image-container">
-                        <Image
-                            src={require("../assets/expanded-image.png")}
-                            alt="Expanded View"
-                            // width={800}
-                            // height={400}
-                        />
-
-                    </div>
-                </div>
-                <div className="col-lg-4">
-                    <CheckList />
-                    <p className="proposal-text">
-                        Custom Grid tie Commercial solar proposals available in 24 hours
-                    </p>
-                    <button className="btn btn-primary-custom">
-                        Request A Quote Today
-                    </button>
-                </div>
-            </div>
+  return (
+    <div className="expanded-content" style={{marginLeft:70,marginRight:70}}>
+      <div className="row">
+        <div className="col-lg-8">
+          <div className="image-container">
+            <Image
+              src={require("../assets/expanded-image.png")}
+              alt="Expanded View"
+              width={800}
+              height={450}
+              style={{
+                width: '100%',
+                height: 'auto',
+                objectFit: 'cover'
+              }}
+            />
+          </div>
         </div>
-    )
+        <div className="col-lg-4">
+          <CheckList />
+          <p className="proposal-text">
+            Custom Grid tie Commercial solar proposals available in 24 hours
+          </p>
+          <button className="btn btn-primary-custom w-100">
+            Request A Quote Today
+          </button>
+        </div>
+      </div>
+    </div>
+  )
 }
 
 function CheckList() {
-    const items = ['Scalable systems tailored to your business size.', 'Reduce electricity expenses and increase profitability.', 'ax credits and incentives for commercial installations.']
+  const items = [
+    'Scalable systems tailored to your business size.',
+    'Reduce electricity expenses and increase profitability.',
+    'Tax credits and incentives for commercial installations.'
+  ]
 
-    return (
-        <div className="checklist">
-            {items.map((item, index) => (
-                <div key={index} className="checklist-card">
-                    <div className="square-check"></div>
-                    <span>{item}</span>
-                </div>
-            ))}
+  return (
+    <div className="checklist">
+      {items.map((item, index) => (
+        <div key={index} className="checklist-card">
+          <div className="square-bullet"></div>
+          <span style={{color:"#000000CC",fontSize:18,maxWidth:300}}>{item}</span>
         </div>
-    )
+      ))}
+    </div>
+  )
 } 

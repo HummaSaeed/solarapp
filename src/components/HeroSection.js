@@ -5,21 +5,23 @@ import Navbar from './Navbar'
 
 export default function HeroSection() {
   return (
-    <div className="hero-section">
+    <section className="hero-section">
       <div className="hero-overlay">
         <Navbar />
-        <div className="container hero-content">
-          <div className="solar-solutions">
-            SOLAR SOLUTIONS
-          </div>
-          
-          <div className="row">
-            <LeftContent />
-            <RightContent />
+        <div className="container">
+          <div className="hero-content">
+            <div className="solar-solutions">
+              SOLAR SOLUTIONS
+            </div>
+            
+            <div className="row">
+              <LeftContent />
+              <RightContent />
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

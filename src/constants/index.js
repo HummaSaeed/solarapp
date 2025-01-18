@@ -8,18 +8,18 @@ export const NAV_ITEMS = [
 
 export const SERVICES = [
   {
-    title: 'Residential Solar Panel',
-    price: '$999.99',
+    title: 'Electric Vehicle Charger Installation',
+    price: 'Starting at $1,750',
     image: require('../assets/service1.png'),
   },
   {
-    title: 'Commercial Solar Solutions',
-    price: '$2499.99',
+    title: 'Grid Tie',
+    price: 'Contact Us For Pricing',
     image: require('../assets/service2.png'),
   },
   {
-    title: 'Agricultural Solar Systems',
-    price: '$1999.99',
+    title: 'Off-Grid',
+    price: 'Starting at $6,300',
     image: require('../assets/service3.png'),
   },
 ] 
