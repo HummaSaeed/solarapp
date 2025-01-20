@@ -41,7 +41,7 @@ export default function SolutionsSection() {
 
   return (
     <section className="solutions-section">
-      <div className="container" style={{marginLeft:-20}}>
+      <div className="container">
         {SOLUTIONS.map((solution, index) => (
           <div key={solution.number}>
             <SolutionItem
@@ -67,7 +67,7 @@ function SolutionItem({ number, title, description, isExpanded, onToggle }) {
       <div className="col-3 d-flex justify-content-start">
         <h3 className="solution-title mb-3">{title}</h3>
       </div>
-      <div className="col-4 d-flex justify-content-center">
+      <div className="col-4 d-flex justify-content-center desc" >
         <p className="solution-description mb-0">{description}</p>
       </div>
       <div className="col-4 d-flex flex-items-end justify-content-end">

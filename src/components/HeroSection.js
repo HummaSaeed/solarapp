@@ -89,8 +89,9 @@ function HeroButtons() {
       <button className="btn btn-primary-custom">
         Get A Quote &gt;
       </button>
-      <button className="btn btn-secondary-custom d-flex align-items-center gap-2">
-        <FaPhone /> Call Us Now
+      <button className="btn btn-secondary-custom d-flex align-items-center gap-2 justify-content-center">
+      
+       Call Us Now
       </button>
     </div>
   )
@@ -119,6 +120,8 @@ function HeroImage() {
         alt="Solar Panel Installation"
         width={400}
         height={100}
+        priority
+        quality={100}
       />
     </div>
   )

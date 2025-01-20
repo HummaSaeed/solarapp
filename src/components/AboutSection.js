@@ -32,12 +32,15 @@ function LeftSection() {
                     FOR ALL OF US.
                 </p>
             </div>
-            <Image
-                src={require("../assets/left-section.png")}
-                alt="Left Section"
-                width={400}
-                height={500}
-            />
+            <div className="left-image">
+                <Image
+                    src={require("../assets/left-section.png")}
+                    alt="Left Section"
+                    width={400}
+                    height={500}
+                    style={{ width: '100%', height: 'auto' }}
+                />
+            </div>
         </div>
     )
 }
